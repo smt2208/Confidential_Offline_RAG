@@ -43,12 +43,6 @@ app = FastAPI(
 )
 
 
-app = FastAPI(
-    title="Confidential Interrogation Records RAG API",
-    description="Offline RAG system for confidential police interrogation records",
-    version="1.0.0",
-    lifespan=lifespan
-)
 
 
 @app.api_route("/", methods=["GET", "HEAD"])
